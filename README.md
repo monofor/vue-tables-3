@@ -1,7 +1,7 @@
 # Vue Tables 3
 
 ### :point_up: Before you go!
-This project originaly forked from [vue-tables-2](https://github.com/matfish2/vue-tables-2). We know it is not enough to say just "thank you" to @matfish2. We have seen there were lots of issues and PR's waiting to merge and fix. We have decided to maintain as a new project. We name it vue-tables-3 because there will also be the version for Vue.js 3 when it is ready.
+This project originaly forked from [vue-tables-2](https://github.com/matfish2/vue-tables-2). We know it is not enough to say just "thank you" to [@matfish2](https://github.com/matfish2). We have seen there were lots of issues and PR's waiting to merge and fix. We have decided to maintain as a new project. We name it vue-tables-3 because there will also be the version for Vue.js 3 when it is ready.
 
 First we will merge PR's and there will be changes in the meantime.
 
