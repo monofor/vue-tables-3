@@ -54,16 +54,22 @@ or [here](https://jsfiddle.net/matfish2/js4bmdbL/) for a rudimentary server comp
 * Vuex (>=2.0)
 * Bootstrap 3 / Bootstrap 4 / Bulma
 
-## Installation
+## Installation with `npm` or `yarn`
 
 ```bash
-npm install vue-tables-2
+## npm
+npm install vue-tables-3
+```
+
+```bash
+## yarn
+yarn add vue-tables-3
 ```
 
 Require the script:
 
 ```js
-import {ServerTable, ClientTable, Event} from 'vue-tables-2';
+import {ServerTable, ClientTable, Event} from 'vue-tables-3';
 ```
 
 ### Register the component(s)
@@ -97,14 +103,14 @@ If you come up with some improvments to the templates or themes, which brings th
 
 ### Using Script Tag
 
-If you are not using NPM you can also import the minified version found in `dist/vue-tables-2.min.js`.
+If you are not using NPM you can also import the minified version found in `dist/vue-tables-3.min.js`.
 Copy the file into your project and import it:
 
 ```html
-<script src="/path/to/vue-tables-2.min.js"></script>
+<script src="/path/to/vue-tables-3.min.js"></script>
 ```
 
-Or, if you prefer, use the [CDN version](https://www.jsdelivr.com/package/npm/vue-tables-2?path=dist).
+Or, if you prefer, use the [CDN version](https://www.jsdelivr.com/package/npm/vue-tables-3?path=dist).
 
 This will expose a global `VueTables` object containing `ClientTable`, `ServerTable` and `Event` as properties.
 
@@ -824,7 +830,7 @@ sortable | Array |  Sortable columns | All columns
 sortingAlgorithm | Function | define your own sorting algorithm  | `function (data, column) { return data.sort(this.getSortFn(column));}`
 storage | String | Which persistance mechanism should be used when saveState is set to true: `local` - localStorage. `session` - sessionStorage | `local`
 templates | Object | See [documentation](#templates) | {}
-texts | Object | see the `texts` object in [defaults.js](https://github.com/matfish2/vue-tables-2/blob/master/lib/config/defaults.js)</code>
+texts | Object | see the `texts` object in [defaults.js](https://github.com/monofor/vue-tables-3/blob/master/lib/config/defaults.js)</code>
 toMomentFormat (client-side) | String | transform date columns string values to momentjs objects using this format. If this option is not used the consumer is expected to pass momentjs objects himself | `false`
 uniqueKey | String | The key of a unique identifier in your dataset, used to track the child rows, and return the original row in row click event | `id`
 

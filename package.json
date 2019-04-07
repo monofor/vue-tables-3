@@ -1,7 +1,7 @@
 {
   "name": "vue-tables-3",
   "description": "Vue.js 2 grid components",
-  "version": "2.0.0",
+  "version": "2.0.1-beta01",
   "keywords": [
     "vue2",
     "vuex",
