@@ -54,7 +54,6 @@ module.exports = function () {
     sortingAlgorithm: function sortingAlgorithm(data, column) {
       return data.sort(this.getSortFn(column));
     },
-
     customSorting: {},
     multiSorting: {},
     clientMultiSorting: true,
@@ -81,9 +80,7 @@ module.exports = function () {
       return data;
     },
     responseAdapter: function responseAdapter(resp) {
-
       var data = this.getResponseData(resp);
-
       return {
         data: data.data,
         count: data.count
