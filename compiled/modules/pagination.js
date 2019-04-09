@@ -17,7 +17,6 @@ module.exports = function (h) {
       }
     };
     var name = _this.vuex ? _this.name : _this.id;
-    console.log(_this);
     return h("pagination", {
       ref: "pagination",
       attrs: {

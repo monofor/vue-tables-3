@@ -29,7 +29,7 @@
     "watch-server": "cross-env NODE_ENV=test mocha-webpack --watch --require test/setup/setup.js test/setup/server-setup.js test/*.spec.js test/server/*.spec.js",
     "build-dist": "cross-env NODE_ENV=production webpack --config webpack.config.dist.js",
     "build-dist-dev": "cross-env NODE_ENV=dev webpack --config webpack.config.dist.js",
-    "dev": "poi example/main.js --serve"
+    "dev": "poi examples/main.js --serve"
   },
   "license": "MIT",
   "main": "compiled/index.js",
@@ -40,7 +40,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "array-intersection": "^0.1.2",
-    "axios": "0.18.0",
+    "axios": "^0.18.0",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-jest": "^24.7.1",
     "babel-loader": "^8.0.5",
