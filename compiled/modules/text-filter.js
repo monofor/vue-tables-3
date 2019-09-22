@@ -25,19 +25,11 @@ module.exports = function (h, inputClass) {
       on: {
         "keyup": _this.opts.debounce ? onKeyUp : search
       },
-<<<<<<< HEAD
       "class": inputClass,
       attrs: {
         name: _this._getColumnName(column),
         type: "text",
-        placeholder: _this.display('filterBy', {
-=======
-
-      "class": inputClass,
-      attrs: { name: _this._getColumnName(column),
-        type: "text",
         placeholder: _this.display("filterBy", {
->>>>>>> Fixed things and upgraded packages. Added pagination and afterPagination slot.
           column: _this.getHeading(column)
         })
       },
