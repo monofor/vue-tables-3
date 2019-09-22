@@ -3455,11 +3455,11 @@ module.exports = function (template, theme) {
         };
 
         if (typeof template === 'string' && (!templates[template] || typeof templates[template] !== 'function')) {
-            throw 'vue-tables-2: Template "' + template + '" does not exist';
+            throw 'vue-tables-3: Template "' + template + '" does not exist';
         }
 
         if (typeof theme === 'string' && (!themes[theme] || _typeof(themes[theme]) !== 'object')) {
-            throw 'vue-tables-2: Theme "' + theme + '" does not exist';
+            throw 'vue-tables-3: Theme "' + theme + '" does not exist';
         }
 
         var tpl = typeof template === 'string' ? templates[template] : template;
@@ -4837,17 +4837,17 @@ var merge = __webpack_require__(0);
 module.exports = function (filter) {
 
   if (!this.opts.filterable) {
-    console.warn("vue-tables-2: Unable to set filter. Filtering is disabled (filterable: false)");
+    console.warn("vue-tables-3: Unable to set filter. Filtering is disabled (filterable: false)");
     return;
   };
 
   if (this.opts.filterByColumn && typeof filter === 'string') {
-    console.warn("vue-tables-2: Unable to set filter. Filter value must be an object (`filterByColumn` is set to `true`)");
+    console.warn("vue-tables-3: Unable to set filter. Filter value must be an object (`filterByColumn` is set to `true`)");
     return;
   };
 
   if (!this.opts.filterByColumn && typeof filter !== 'string') {
-    console.warn("vue-tables-2: Unable to set filter. Filter value must be a string (`filterByColumn` is set to `false`)");
+    console.warn("vue-tables-3: Unable to set filter. Filter value must be a string (`filterByColumn` is set to `false`)");
     return;
   };
 
@@ -9563,7 +9563,7 @@ module.exports = function (data) {
       return row;
     });
   } catch (e) {
-    console.error('vue-tables-2: non-iterable data property. Expected array, got ' + (typeof data === 'undefined' ? 'undefined' : _typeof(data)) + '. Make sure that your response conforms to the expected format, or use the \'responseAdapter\' option to match the currently returned format');
+    console.error('vue-tables-3: non-iterable data property. Expected array, got ' + (typeof data === 'undefined' ? 'undefined' : _typeof(data)) + '. Make sure that your response conforms to the expected format, or use the \'responseAdapter\' option to match the currently returned format');
     console.error('Data equals', data);
     throw new Error();
   }
@@ -9671,7 +9671,7 @@ module.exports = function () {
 
 
     if (!this.opts.childRow || typeof this.opts.childRow === 'function') {
-        throw new Error('vue-tables-2: Child row undefined or not a component');
+        throw new Error('vue-tables-3: Child row undefined or not a component');
     }
 
     var Rows = rows ? this.openChildRows.filter(function (row) {
@@ -10011,7 +10011,7 @@ module.exports = function (query) {
       if (el) {
         el.value = query[column];
       } else if (this.columns.indexOf(column) === -1) {
-        console.error('vue-tables-2: Error in setting filter value. Column \'' + column + '\' does not exist.');
+        console.error('vue-tables-3: Error in setting filter value. Column \'' + column + '\' does not exist.');
       }
     }
   } else {
@@ -12475,7 +12475,7 @@ exports.install = function (Vue, globalOptions, useVuex) {
     created: function created() {
 
       if (!this.opts.requestFunction && !this.url) {
-        throw 'vue-tables-2: you must provide either a "url" prop or a custom request function. Aborting';
+        throw 'vue-tables-3: you must provide either a "url" prop or a custom request function. Aborting';
       }
 
       _created(this);
@@ -12655,7 +12655,7 @@ module.exports = function (response) {
   this.data = this.applyFilters(data.data);
 
   if (isNaN(data.count)) {
-    console.error('vue-tables-2: invalid \'count\' property. Expected number, got ' + _typeof(data.count));
+    console.error('vue-tables-3: invalid \'count\' property. Expected number, got ' + _typeof(data.count));
     console.error('count equals', data.count);
     throw new Error();
   }

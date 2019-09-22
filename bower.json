@@ -1,7 +1,7 @@
 {
   "name": "vue-tables-3",
   "description": "Vue.js 2 grid components",
-  "main": "dist/vue-tables-2.min.js",
+  "main": "dist/vue-tables-3.min.js",
   "license": "MIT",
   "keywords": [
     "vue",
@@ -9,7 +9,7 @@
     "tables",
     "grids"
   ],
-  "homepage": "https://github.com/matfish2/vue-tables-3",
+  "homepage": "https://github.com/monofor/vue-tables-3",
   "ignore": [
     "**/.*",
     "node_modules",
