@@ -62,7 +62,7 @@
     "ignore-loader": "^0.1.2",
     "jest": "24.7.1",
     "jquery": "3.3.1",
-    "jsdom": "14.0.0",
+    "jsdom": "16.5.0",
     "jsdom-global": "^3.0.2",
     "merge": "1.2.1",
     "mocha": "6.1.2",
