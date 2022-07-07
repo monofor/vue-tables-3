@@ -68,7 +68,7 @@
     "mocha": "6.1.2",
     "mocha-webpack": "1.1.0",
     "mock-local-storage": "1.1.8",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "moxios": "^0.4.0",
     "poi": "^12.6.4",
     "sinon": "7.3.1",
