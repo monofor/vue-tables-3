@@ -65,7 +65,7 @@
     "jsdom": "14.0.0",
     "jsdom-global": "^3.0.2",
     "merge": "1.2.1",
-    "mocha": "6.1.2",
+    "mocha": "10.2.0",
     "mocha-webpack": "1.1.0",
     "mock-local-storage": "1.1.8",
     "moment": "2.24.0",
